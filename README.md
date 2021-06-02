@@ -34,4 +34,4 @@ function [Rank,RunTime]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
 -  pigdata.xlsx: Data file
 
 ## Citation
-Yongqiao Wanga, Stan Uryasev, Buffered-Rankings for Economic Efficiency Analysis, Working paper, Zhejiang Gongshang University.
+Yongqiao Wang, Stan Uryasev, Buffered-Rankings for Economic Efficiency Analysis, Working paper, Zhejiang Gongshang University.
