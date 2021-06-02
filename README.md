@@ -32,3 +32,6 @@ function [Rank,RunTime]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
 -  WorstTechRankOpt.m: Estimate the worst ranking in terms of technical efficiency
 -  demo.m: The demo file that illustrates how to use six ranking functions
 -  pigdata.xlsx: Data file
+
+## Citation
+Yongqiao Wanga, Stan Uryasev, Buffered-Rankings for Economic Efficiency Analysis, Working paper, Zhejiang Gongshang University.
