@@ -1,4 +1,4 @@
-function [Rank,RunTime]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
+function [Rank,RunTime,vOptNu,vOptMu]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
 %Aim
 %Estimate the worst ranking of the technical efficiency of iDMUo among DMUs (mInput,mOutput)
 
@@ -34,4 +34,8 @@ model.vtype=[repmat('B',J,1);repmat('C',nInput+nOutput,1)];
 results = gurobi(model,params);
 RunTime=results.runtime;
 Rank=results.objval;
+
+vZ=results.x(1:J);
+vOptNu=results.x((1+J):(J+nInput));
+vOptMu=results.x((J+nInput+1):end);
 

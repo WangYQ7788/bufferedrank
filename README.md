@@ -5,23 +5,14 @@ Best buffered ranking: The best buffered-ranking for a DMU is the highest upper 
 [Gurobi](http://www.gurobi.com "Gurobi")
 
 ## Usage
-function [Rank,RunTime,ApproxRank]=BestEcoBuffRankFun(mInput,mOutput,iDMUo,params) 
-function [Rank,RunTime,ApproxRank]=WorstEcoBuffRankFun(mInput,mOutput,iDMUo,params)
-function [Rank,RunTime]=BestEcoRankOpt(mInput,mOutput,iDMUo,params)
-function [Rank,RunTime]=WorstEcoRankOpt(mInput,mOutput,iDMUo,params)
-function [Rank,RunTime]=BestTechRankOpt(mInput,mOutput,iDMUo,params)
-function [Rank,RunTime]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
+function BestEcoBuffRankFun
+function WorstEcoBuffRankFun
+function BestEcoRankOpt
+function WorstEcoRankOpt
+function BestTechRankOpt
+function WorstTechRankOpt
 ### %Aim 
 - %Estimate the best buffered ranking of the economic efficiency of iDMUo among DMUs (mInput,mOutput)
-### %inputs 
-- %mInput: matrix of inputs, x_jm, row: DMU, column: input 
-- %mOutput:matrix of outputs, x_jn, row: DMU, column: output 
-- %jDMUo: a number, the DMU to be evaluated 
-- %params: the gurobi parameters
-### %output 
-- %Rank: number, the best rank for DMUo 
-- %RunTime: time in seconds, running time for computing DMUo's best ranking 
-- %ApproxRank: the upper rank of DMUo in J measures E_j(nu*,mu*)
 
 ## Files
 -  BestEcoBuffRankFun.m: Estimate the best buffered ranking in terms of economic efficiency
@@ -30,7 +21,9 @@ function [Rank,RunTime]=WorstTechRankOpt(mInput,mOutput,iDMUo,params)
 -  WorstEcoRankOpt.m: Estimate the worst ranking in terms of economic efficiency
 -  BestTechRankOpt.m: Estimate the best ranking in terms of technical efficiency
 -  WorstTechRankOpt.m: Estimate the worst ranking in terms of technical efficiency
--  demo.m: The demo file that illustrates how to use six ranking functions
+-  exp1.m: illustrates the first concern with artificial data 1
+-  exp2.m: illustrates the second concern with artificial data 2
+-  exp3.m: illustrates the third concern with Pig data
 -  pigdata.xlsx: Data file
 
 ## Citation
